@@ -1,22 +1,23 @@
 package edu.cnm.deepdive;
 
-import java.util.*;
-import java.lang.Math;
+import java.util.Scanner;
 
 public class TempConverter {
-    private static Scanner input = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        boolean repeat;
-        
-        do {
-            double fahrenheit;
-            double celsius;
-            
-            fahrenheit = input.nextDouble();
-            celsius = (fahrenheit - 32) * 5 / 9;
-            System.out.println(celsius);
-            repeat = input.nextBoolean();
-        } while (repeat); 
-    }
+  private static Scanner input = new Scanner(System.in);
+
+  public static void main(String[] args) {
+    boolean repeat;
+
+    do {
+      double fahrenheit;
+      double celsius;
+      System.out.print("Enter a temperature in Fahrenheit: ");
+      fahrenheit = input.nextDouble();
+      celsius = (fahrenheit - 32) * 5 / 9;
+      System.out.println(celsius);
+      System.out.print("Convert another (True/False)? ");
+      repeat = input.nextBoolean();
+    } while (repeat);
+  }
 }
