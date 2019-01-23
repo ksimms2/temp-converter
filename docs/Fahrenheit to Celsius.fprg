@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KSimms"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-01-23 01:16:28 PM"/>
+        <attribute name="created" value="S1NpbW1zO0tFVklOUy1UT1A7MjAxOS0wMS0yMzswODowNzo1MSBBTTsyNjE2"/>
+        <attribute name="edited" value="S1NpbW1zO0tFVklOUy1UT1A7MjAxOS0wMS0yMzswMToxNjoyOCBQTTs0OzI3Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="repeat" type="Boolean" array="False" size=""/>
+            <do expression="repeat">
+                <declare name="Fahrenheit" type="Real" array="False" size=""/>
+                <declare name="Celsius" type="Real" array="False" size=""/>
+                <input variable="fahrenheit"/>
+                <assign variable="celsius" expression="(fahrenheit - 32) * 5 / 9"/>
+                <output expression="celsius" newline="True"/>
+                <input variable="repeat"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
