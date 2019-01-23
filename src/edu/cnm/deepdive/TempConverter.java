@@ -1,3 +1,5 @@
+package edu.cnm.deepdive;
+
 import java.util.*;
 import java.lang.Math;
 
@@ -15,6 +17,6 @@ public class TempConverter {
             celsius = (fahrenheit - 32) * 5 / 9;
             System.out.println(celsius);
             repeat = input.nextBoolean();
-        } while (repeat);
+        } while (repeat); 
     }
 }
